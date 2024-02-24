@@ -14,7 +14,7 @@ bool show = true;
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
-  show = prefs.getBool('ON_BOARDING') ??true;
+  show = prefs.getBool('ON_BOARDING') ??false;
   runApp(const MyApp());     
 }
 

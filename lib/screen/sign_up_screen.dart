@@ -14,6 +14,7 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
